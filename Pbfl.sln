@@ -18,9 +18,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrations", "Migrations", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqliteMigrations", "Migrations\SqliteMigrations\SqliteMigrations.csproj", "{0FBDD9A7-7E17-48DC-AD72-BA77FD2B3201}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pbfl.Server", "Pbfl.Server\Pbfl.Server.csproj", "{446787D4-EB6B-407A-B8C8-7A763C713BE5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pbfl.Blazor", "Pbfl.Blazor\Pbfl.Blazor.csproj", "{80DE27A2-E41B-4A00-8F2B-AC93DF511AFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pbfl.API", "Pbfl.API\Pbfl.API.csproj", "{2B58D297-6D61-49A7-A079-2A074A763D71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,14 +40,14 @@ Global
 		{0FBDD9A7-7E17-48DC-AD72-BA77FD2B3201}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FBDD9A7-7E17-48DC-AD72-BA77FD2B3201}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FBDD9A7-7E17-48DC-AD72-BA77FD2B3201}.Release|Any CPU.Build.0 = Release|Any CPU
-		{446787D4-EB6B-407A-B8C8-7A763C713BE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{446787D4-EB6B-407A-B8C8-7A763C713BE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{446787D4-EB6B-407A-B8C8-7A763C713BE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{446787D4-EB6B-407A-B8C8-7A763C713BE5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{80DE27A2-E41B-4A00-8F2B-AC93DF511AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{80DE27A2-E41B-4A00-8F2B-AC93DF511AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80DE27A2-E41B-4A00-8F2B-AC93DF511AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80DE27A2-E41B-4A00-8F2B-AC93DF511AFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B58D297-6D61-49A7-A079-2A074A763D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B58D297-6D61-49A7-A079-2A074A763D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B58D297-6D61-49A7-A079-2A074A763D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B58D297-6D61-49A7-A079-2A074A763D71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A2AC1AFF-981D-44CE-97B7-BAA45C1E6600} = {49EDD742-2002-4796-B8F8-33DCBA43A686}
