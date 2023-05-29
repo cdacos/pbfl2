@@ -1,7 +1,5 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PbflApp", "PbflApp\PbflApp.csproj", "{604AE197-4D2D-4843-A93C-96FE0D3502C2}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "__root__", "__root__", "{21399CC9-353B-44EC-A325-8135934FE2F9}"
 	ProjectSection(SolutionItems) = preProject
 		.dockerignore = .dockerignore
@@ -9,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "__root__", "__root__", "{21
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{ADE51760-29EF-4130-8AF3-F785C15C4EF5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pbfl.Data", "Pbfl.Data\Pbfl.Data.csproj", "{ADE51760-29EF-4130-8AF3-F785C15C4EF5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostgresMigrations", "Migrations\PostgresMigrations\PostgresMigrations.csproj", "{A2AC1AFF-981D-44CE-97B7-BAA45C1E6600}"
 EndProject
@@ -20,16 +18,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrations", "Migrations", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqliteMigrations", "Migrations\SqliteMigrations\SqliteMigrations.csproj", "{0FBDD9A7-7E17-48DC-AD72-BA77FD2B3201}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pbfl.Server", "Pbfl.Server\Pbfl.Server.csproj", "{446787D4-EB6B-407A-B8C8-7A763C713BE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pbfl.Web", "Pbfl.Web\Pbfl.Web.csproj", "{E32FB42F-A019-4A12-890C-3643F6E67A3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{604AE197-4D2D-4843-A93C-96FE0D3502C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{604AE197-4D2D-4843-A93C-96FE0D3502C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{604AE197-4D2D-4843-A93C-96FE0D3502C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{604AE197-4D2D-4843-A93C-96FE0D3502C2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ADE51760-29EF-4130-8AF3-F785C15C4EF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ADE51760-29EF-4130-8AF3-F785C15C4EF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADE51760-29EF-4130-8AF3-F785C15C4EF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -42,6 +40,14 @@ Global
 		{0FBDD9A7-7E17-48DC-AD72-BA77FD2B3201}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FBDD9A7-7E17-48DC-AD72-BA77FD2B3201}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FBDD9A7-7E17-48DC-AD72-BA77FD2B3201}.Release|Any CPU.Build.0 = Release|Any CPU
+		{446787D4-EB6B-407A-B8C8-7A763C713BE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{446787D4-EB6B-407A-B8C8-7A763C713BE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{446787D4-EB6B-407A-B8C8-7A763C713BE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{446787D4-EB6B-407A-B8C8-7A763C713BE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E32FB42F-A019-4A12-890C-3643F6E67A3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E32FB42F-A019-4A12-890C-3643F6E67A3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E32FB42F-A019-4A12-890C-3643F6E67A3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E32FB42F-A019-4A12-890C-3643F6E67A3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A2AC1AFF-981D-44CE-97B7-BAA45C1E6600} = {49EDD742-2002-4796-B8F8-33DCBA43A686}

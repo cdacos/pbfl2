@@ -21,6 +21,6 @@ public static class DbContextHelper
     public static Type? GetTypeFromName(this AppDbContext context, string entityType)
     {
         var assembly = Assembly.GetAssembly(typeof(DbContextHelper))!;
-        return assembly.GetType("Pbfl.Data.Models." + entityType);
+        return assembly.GetType("Pbfl.Pbfl.Data.Models." + entityType);
     }
 }
