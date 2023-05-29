@@ -20,7 +20,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqliteMigrations", "Migrati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pbfl.Server", "Pbfl.Server\Pbfl.Server.csproj", "{446787D4-EB6B-407A-B8C8-7A763C713BE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pbfl.Web", "Pbfl.Web\Pbfl.Web.csproj", "{E32FB42F-A019-4A12-890C-3643F6E67A3C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pbfl.Blazor", "Pbfl.Blazor\Pbfl.Blazor.csproj", "{80DE27A2-E41B-4A00-8F2B-AC93DF511AFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,10 +44,10 @@ Global
 		{446787D4-EB6B-407A-B8C8-7A763C713BE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{446787D4-EB6B-407A-B8C8-7A763C713BE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{446787D4-EB6B-407A-B8C8-7A763C713BE5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E32FB42F-A019-4A12-890C-3643F6E67A3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E32FB42F-A019-4A12-890C-3643F6E67A3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E32FB42F-A019-4A12-890C-3643F6E67A3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E32FB42F-A019-4A12-890C-3643F6E67A3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80DE27A2-E41B-4A00-8F2B-AC93DF511AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80DE27A2-E41B-4A00-8F2B-AC93DF511AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80DE27A2-E41B-4A00-8F2B-AC93DF511AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80DE27A2-E41B-4A00-8F2B-AC93DF511AFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A2AC1AFF-981D-44CE-97B7-BAA45C1E6600} = {49EDD742-2002-4796-B8F8-33DCBA43A686}
