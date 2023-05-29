@@ -5,6 +5,8 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <AssemblyName>Pbfl.App</AssemblyName>
+        <RootNamespace>Pbfl.App</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
