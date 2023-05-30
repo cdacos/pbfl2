@@ -23,4 +23,12 @@ public static class DbContextHelper
         var assembly = Assembly.GetAssembly(typeof(DbContextHelper))!;
         return assembly.GetType("Pbfl.Pbfl.Data.Models." + entityType);
     }
+    
+    public static int GetPrimaryKeyValue<T>(this AppDbContext context, T entity)
+    {
+        var keyName = context.Model.FindEntityType(typeof (T)).FindPrimaryKey().Properties
+            .Select(x => x.Name).Single();
+
+        return (int)entity.GetType().GetProperty(keyName).GetValue(entity, null);
+    }
 }
