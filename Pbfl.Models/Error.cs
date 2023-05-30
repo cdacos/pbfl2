@@ -1,6 +1,6 @@
-using Pbfl.Data.Helpers;
+using Pbfl.Models.Helpers;
 
-namespace Pbfl.Data.Models;
+namespace Pbfl.Models;
 
 public class Error
 {

@@ -1,0 +1,43 @@
+﻿@page "/Leagues"
+@using Pbfl.Models
+@inject IHttpClientFactory ClientFactory
+@inject ILogger<Leagues> Logger;
+
+<h3>Leagues</h3>
+
+@foreach (var league in leagues)
+{
+    <div>@league.Name - @league.Description</div>
+}
+
+@code {
+    List<League> leagues = new List<League>();
+    
+    protected override async Task OnInitializedAsync()
+    {
+        var client = ClientFactory.CreateClient("CDSClient");
+        
+        var request = new HttpRequestMessage()
+        {
+            Method = HttpMethod.Get,
+            RequestUri = new Uri($"{client.BaseAddress}leagues")
+        };
+        
+        var response = await client.SendAsync(request);
+
+        if (response.IsSuccessStatusCode)
+        {
+            leagues = (await response.Content.ReadFromJsonAsync<List<League>>())!;
+        }
+        else
+        {
+            var s = await response.Content.ReadAsStringAsync();
+            // error = await response.Content.ReadFromJsonAsync<Error>();
+            // error.statuscode = (int)response.StatusCode;
+            // error.reason = response.ReasonPhrase;
+            // message = "An error occurred.";
+            Logger.LogError(s);
+        }
+    }
+
+}

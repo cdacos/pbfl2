@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Pbfl.API.Endpoints;
 using Pbfl.API.Helpers;
 using Pbfl.Data;
-using Pbfl.Data.Models;
+using Pbfl.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,10 +11,18 @@ builder.Services.AddDbContext<AppDbContext>(builder.GetDbContextOptions());
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddCors();
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
+    app.UseCors(corsPolicyBuilder => corsPolicyBuilder
+        .AllowAnyOrigin()
+        .AllowAnyMethod()
+        .AllowAnyHeader()
+    );
+    
     app.UseSwagger();
     app.UseSwaggerUI();
 }

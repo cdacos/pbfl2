@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Pbfl.Data.Helpers;
-using Pbfl.Data.Models;
+using Pbfl.Models;
 
 namespace Pbfl.Data
 {

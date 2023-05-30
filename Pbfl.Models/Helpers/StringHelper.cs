@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace Pbfl.Data.Helpers;
+namespace Pbfl.Models.Helpers;
 
 public static class StringHelper
 {
