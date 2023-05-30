@@ -14,7 +14,7 @@ Supported databases are:
 For example:
 
 ```json
-"DatabaseProvider": "Postgres",
+"DatabaseProvider": "SqliteDebug",
 "ConnectionStrings": {
     "Postgres": "Server=127.0.0.1;Port=5432;Database=pbfl;User Id=postgres;Password=blah",
     "Sqlite": "Data Source=pbfl.db"

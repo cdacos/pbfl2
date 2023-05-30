@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace Pbfl.Data;
+namespace Pbfl.Data.Helpers;
 
 public static class ModelBuilderHelper
 {

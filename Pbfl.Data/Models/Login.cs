@@ -1,3 +1,5 @@
+using Pbfl.Data.Helpers;
+
 namespace Pbfl.Data.Models;
 
 public class Login

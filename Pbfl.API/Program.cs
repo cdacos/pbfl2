@@ -1,5 +1,11 @@
+using Pbfl.API;
+using Pbfl.API.Helpers;
+using Pbfl.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddDbContext<AppDbContext>(builder.GetDbContextOptions());
+    
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

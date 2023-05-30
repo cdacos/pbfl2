@@ -1,10 +1,14 @@
 #!/bin/sh
 
+project_using_ef=Pbfl.API
+
 echo "ef-migrations.sh [add/list/remove/rollback] [migration-name]"
 
 action=$1
 name=$2
 
+script_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+echo $script_dir
 add_or_remove=false
 
 if [ "$action" = "add" ]; then
@@ -23,13 +27,14 @@ elif [ "$action" = "remove" ]; then
 fi 
 
 start_dir=$(pwd)
-website_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)/../Website
+website_dir=$script_dir/../$project_using_ef
 cd "$website_dir" || return
 pwd
 
 if [ $add_or_remove = true ]; then
-#  dotnet ef migrations "$action" $name --project ../PostgresMigrations -- --DatabaseProvider Postgres
-  dotnet ef migrations "$action" $name --project ../SqliteMigrations -- --DatabaseProvider Sqlite
+  echo "dotnet ef migrations "$action" $name --project ../Migrations/SqliteMigrations -- --DatabaseProvider Sqlite"
+#  dotnet ef migrations "$action" $name --project ../Migrations/PostgresMigrations -- --DatabaseProvider Postgres
+  dotnet ef migrations "$action" $name --project ../Migrations/SqliteMigrations -- --DatabaseProvider Sqlite
 else
   if [ "$action" = "rollback" ]; then
     if [ "$name" = "" ]; then
@@ -49,4 +54,4 @@ fi
 
 cd "$start_dir" || return
 
-read -p "Press enter to close"
+#read -p "Press enter to close"
